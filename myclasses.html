@@ -1,0 +1,141 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Courses Details</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="header">
+      <nav class="navbar navbar-expand-lg px-4 py-2 bg-white shadow"><a href="#" class="sidebar-toggler text-gray-500"><i class="fas fa-align-left"><strong class="text-uppercase headings-font-family"> Menu</strong></i></a><a href="dashboard.html" class="navbar-brand font-weight-bold text-uppercase">Engineering Courses Management</a>
+        <ul class="ml-auto d-flex align-items-center list-unstyled mb-0">
+        
+          <li class="nav-item dropdown ml-auto"><a id="userInfo" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><img src="img/avatar.jpg" alt="User" style="max-width: 2.5rem;" class="img-fluid rounded-circle shadow"></a>
+           
+            <div aria-labelledby="userInfo" class="dropdown-menu">
+            <a href="#" class="dropdown-item">
+            	<strong class="d-block text-uppercase headings-font-family">Name Here</strong>
+            		<small>Professor</small>
+            </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">Settings</a>
+              <div class="dropdown-divider"></div>
+              <a href="login.html" class="dropdown-item">Logout</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    
+<div class="container">
+	<section class="py-5">
+	
+	<div class="row align-items-center">
+	
+	<div class="col-sm">
+		<img src="https://www.uregina.ca/external/communications/assets/identity1/Primary_Logo/Full%20Colour/UR_Logo_Primary_Full_COlour_RGB.png" alt="UR Courses" width="250px" height="100px">
+	</div>
+	
+	<div class="col-sm">
+			<p class="display-4 font-weight-bold">My Classes</p>
+			</div>
+		<div class="col-sm">
+		</div>
+
+	
+	
+	
+	</div>
+	
+	<div id="myGroup" class="mt-5">
+	
+	<div class="float-left">
+		<button class="btn btn-outline-primary dropdown" type="button" data-toggle="collapse" data-target="#collapseSearch" aria-expanded="false" aria-controls="collapseExample1">Search</button>
+	</div>
+
+	<div class="float-right">
+		<button id="add-class-btn" class="btn btn-outline-primary dropdown" type="button">Add Class</button>
+	</div>
+	
+	
+	<div class="collapse float-left mt-3 mb-3 w-100" id="collapseSearch" data-parent="#myGroup">
+		<div class="card card-body">
+		<div class="row align-items-center">
+
+	<div class="col-sm" >
+		<div class="form-group row">
+      	<input type="text" class="form-control" id="inputFacultyName" placeholder="Faculty Name">
+		</div>
+		</div>
+		
+	<div class="col-sm">
+		<div class="form-group row">
+      	<input type="text" class="form-control" id="inputCourseNumber" placeholder="Course Number">
+		</div>
+		</div>
+		
+	<div class="col-sm">
+		<div class="form-group row">
+		<input type="text" class="form-control" id="inputTerm" placeholder="Term">
+		</div>
+		</div>
+	
+	<div class="col-sm">
+		<div class="form-group row">
+      	<input type="text" class="form-control" id="inputYear" placeholder="Year">
+		</div>
+		</div>
+
+<div class="col-sm">
+		<div class="form-group row">
+      	<input type="text" class="form-control" id="inputStatus" placeholder="Status">
+		</div>
+		</div>
+		
+		</div>
+
+	</div>
+	</div>
+	</div>
+
+	</section>
+	
+<form class="was-validated">
+	<section class="py-5">
+		<table class="table table-bordered table-striped">
+			<thead class="thead-dark">
+			<tr>
+				<th scope="col" class="th-sm">Faculty Name</th>
+				<th scope="col" class="th-sm">Course Number</th>
+				<th scope="col" class="th-sm">Term</th>
+				<th scope="col" class="th-sm">Year</th>
+				<th scope="col" class="th-sm">Status</th>
+			</tr>
+			</thead>
+			
+			<tbody id="my-classes-tbody myTable">
+			</tbody>
+		</table>
+		</section>
+		</form>
+	
+	
+	
+	</div>
+  
+    
+
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>
+	<script src="baseurl.js"></script>
+	<script src="myclasses.js"></script>
+</body>
+</html>
